@@ -1,7 +1,9 @@
 var webpack = require('webpack');
 
-var commonsPlugin =
-    new webpack.optimize.CommonsChunkPlugin('common.js');
+var pagesCommonsPlugin =
+    new webpack.optimize.CommonsChunkPlugin('pages-common.js', ['Page1', 'Page2']);
+
+var dedupePlugin = new webpack.optimize.DedupePlugin();
 
 module.exports = {
     entry: {
@@ -23,5 +25,5 @@ module.exports = {
     resolve: {
         extensions: ['', '.js', '.json', '.coffee']
     },
-    plugins: [commonsPlugin]
+    plugins: [pagesCommonsPlugin, dedupePlugin]
 };

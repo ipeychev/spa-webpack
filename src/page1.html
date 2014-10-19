@@ -52,20 +52,24 @@
         </div>
         <!-- End of content surface -->
 
-        <script src="/build/common.js"></script>
-        <script src="/build/page1.js"></script>
+        <div id="scripts">
+            <div id="scripts-default">
+                <script src="/build/pages-common.js"></script>
+                <script src="/build/page1.js"></script>
 
-        <script src="/lib/senna-min.js"></script>
+                <script src="/lib/senna-min.js"></script>
 
-        <script>
-            // var app = new senna.App();
+                <script>
+                    var app = new senna.App();
 
-            // app.setBasePath('/src/');
-            // app.addSurfaces(['content', 'menu']);
-            // app.addRoutes([
-            //     new senna.Route('index.html', senna.HtmlScreen),
-            //     new senna.Route('page2.html', senna.HtmlScreen)
-            // ]);
-        </script>
+                    app.setBasePath('/src/');
+                    app.addSurfaces(['content', 'menu']);
+                    app.addRoutes([
+                        new senna.Route('index.html', senna.HtmlScreen),
+                        new senna.Route('page2.html', senna.HtmlScreen)
+                    ]);
+                </script>
+            </div>
+        </div>
     </body>
 </html>
