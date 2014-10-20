@@ -9,5 +9,3 @@
 
 	el.innerHTML = '<h2>Dynamic content from Page 1</h2>';
 }());
-
-
