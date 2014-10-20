@@ -37,4 +37,4 @@ function debounce(callback, timeout, context, args) {
     return callFn;
 }
 
-module.exports = debounce;
+export default debounce;

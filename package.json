@@ -7,6 +7,8 @@
     "webpack": "^1.4.8"
   },
   "devDependencies": {
+    "6to5": "^1.9.10",
+    "6to5-loader": "^0.2.3",
     "webpack": "^1.4.8"
   },
   "scripts": {

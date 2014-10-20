@@ -1,6 +1,6 @@
 'use strict';
 
-var debounce = require('./debounce');
+import debounce from './debounce';
 
 console.log(debounce);
 
